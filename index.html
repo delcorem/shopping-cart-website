@@ -1,0 +1,57 @@
+<!-- 
+    Author: Michael Delcore, 991588388
+    Date last modified: 19/06/21
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/delcorem.css">
+        <title>Michael Delcore's Assignment 1</title>
+    </head>
+    <body>
+        <header>
+            <h1>Products for sale based on my username, "delcorem"</h1>
+        </header>
+
+        <p> Select grocery item and the quantity desired on the left, and add to cart on the right. When finished, click on "Purchase." </p>
+        <br>
+
+        <div class = "grid-container">
+             <div class = "grid-item">
+                 <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="delcorem"><br>
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" value="delcorem@sheridancollege.ca"><br>
+                    <label for="quantity">Number of items:</label>
+                    <input type="number" id="quantity" value="1" min="0" max="1000"> 
+                    <label for="price">$2.25 per item</label> <br>
+                    <label for="item">Select item:</label> 
+                    <select name="item" id="item">
+                        <option value="dishsoap">Dish Soap</option><br>
+                        <option value="eggs">Eggs</option><br>
+                        <option value="lemons">Lemons</option><br>
+                        <option value="chocolate">Chocolate</option><br>
+                        <option value="orange">Orange</option><br>
+                        <option value="rice">Rice</option><br>
+                        <option value="eel">Eel Sushi</option><br>
+                        <option value="marshmallow">Marshmallows</option>
+                        </select>
+                    </form>
+                </div>
+                <div class = "grid-item">
+                    <br>
+                    <button type="button" onclick="doAddToCart()">Add to Cart</button>
+                    <p id="added">Succesfully added to cart!</p>
+                    <br><br>
+                    <button type="button" onclick="doPurchase()">Purchase</button>
+                    <p id="purchase">Must add to cart before purchase!</p>
+                </div>
+             </div>
+        <footer>
+            Michael Delcore, 991588388, Trafalgar 
+            <img src="images/me.jpg" alt="Picture of me">
+        </footer>
+    </body>
+    <script src="js/delcorem.js"></script>
+</html>

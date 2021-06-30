@@ -1,0 +1,44 @@
+header {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: rgb(7, 37, 54);
+}
+h1 {
+    text-align: center;
+    background:#53e4fd;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 37, 54);
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-style: oblique;
+}
+img {
+    height: 50px;
+    width: auto;
+}
+.grid-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr)); 
+         /* Not Equal*/
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    background-color: #53e4fd;
+    padding:10px;
+    grid-column-gap:30px;
+    grid-row-gap: 30px;;
+}
+.grid-item {
+    background-color: rgba(248, 248, 244, 0.8);
+    border :1px solid black;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+}

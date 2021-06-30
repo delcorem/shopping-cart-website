@@ -20,7 +20,7 @@ function doPurchase() {
         document.querySelector('#purchase').style.display = 'block';
     }
     else{
-        window.location.href = "/pages/quote.html";
+        window.open('pages/quote.html', '_self');
     }
     
 }
